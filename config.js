@@ -42,7 +42,7 @@ window.CONFIG = {
   foto: {
     pria:   'assets/foto/hizul.jpg',
     wanita: 'assets/foto/tania.jpg',
-    bersama: ''   // foto berdua (opsional). Kosong = memakai galeri-1.jpg
+    bersama: 'assets/foto/galeri-1.jpg'   // foto berdua (opsional). Kosong = memakai galeri-1.jpg
   },
   // Jumlah foto galeri mengikuti isi daftar ini (boleh 4, 6, 9, dst.)
   galeri: [
