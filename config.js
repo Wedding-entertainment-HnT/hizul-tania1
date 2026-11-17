@@ -56,3 +56,16 @@ window.CONFIG = {
   merak: 'assets/merak/merak.webp',
   musik: 'assets/musik/musik.mp3'   // kosongkan '' bila tanpa musik
 };
+
+// Muat penyempurnaan desain hanya pada halaman undangan utama.
+document.addEventListener('DOMContentLoaded', function () {
+  if (!document.querySelector('.scene-bg')) return;
+  var stylesheet = document.createElement('link');
+  stylesheet.rel = 'stylesheet';
+  stylesheet.href = 'css/elegance.css';
+  document.head.appendChild(stylesheet);
+  var nature = document.createElement('script');
+  nature.src = 'js/nature.js';
+  nature.async = true;
+  document.body.appendChild(nature);
+}, { once: true });

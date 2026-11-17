@@ -1,0 +1,86 @@
+/* Penyempurnaan visual — undangan Hizul & Tania */
+:root {
+  --ink: #303b35;
+  --ink2: #68746b;
+  --mist: #f5f3ed;
+  --mist2: #e8e4d8;
+  --slate: #344840;
+  --slate2: #24352f;
+  --gold: #b69a67;
+  --gold2: #e0cc9e;
+  --ivory: #fffdf8;
+  --goldg: linear-gradient(135deg, #92784b, #e4d3a9 48%, #aa8c58 72%, #d7c08c);
+}
+
+body {
+  color: var(--ink);
+  background-color: var(--mist);
+  letter-spacing: .012em;
+}
+.scene-bg { background: #e9eee9; }
+.scene-bg > .scene-in { filter: saturate(.82) contrast(1.025); }
+.sec.light { background: rgba(250, 248, 242, .82); }
+.sec.light.alt { background: rgba(238, 237, 228, .88); }
+.sec.dark {
+  background: linear-gradient(155deg, #30463e, #263a34 58%, #22342f);
+}
+.sec.dark::before {
+  background: radial-gradient(100% 65% at 50% 0, rgba(226, 211, 171, .1), transparent 70%);
+}
+
+/* Tipografi yang lebih tenang dan berkelas */
+.eyebrow { letter-spacing: .32em; }
+.h2 { letter-spacing: .045em; }
+.lead { color: #647169; }
+.dark .lead { color: #d0d9d1; }
+.hero-arch {
+  background: linear-gradient(155deg, rgba(255, 253, 247, .84), rgba(247, 245, 237, .59));
+  border-color: rgba(182, 154, 103, .82);
+  box-shadow: inset 0 0 0 7px rgba(255, 255, 255, .4), 0 0 0 8px rgba(182, 154, 103, .12), 0 28px 72px rgba(40, 55, 45, .2);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+.hero-arch::before { border-color: rgba(182, 154, 103, .58); }
+.hero-names { color: #33463d; }
+.hero-date { color: #526357; }
+
+/* Emas lembut, tidak terlalu berkilau */
+.btn {
+  border-color: #9e8352;
+  background: linear-gradient(135deg, #8c7449, #c4aa75 52%, #9a8050);
+  box-shadow: 0 8px 22px rgba(65, 53, 31, .2);
+  letter-spacing: .2em;
+}
+.btn.slate { background: #344840; border-color: #344840; }
+.btn.ghost { border-color: rgba(158, 131, 82, .72); }
+
+/* Bingkai foto dan kartu dibuat lebih halus */
+.photo-arch {
+  border-color: rgba(182, 154, 103, .9);
+  box-shadow: 0 0 0 6px rgba(255, 253, 248, .7), 0 0 0 7px rgba(182, 154, 103, .48), 0 22px 48px rgba(45, 59, 49, .19);
+}
+.event-arch {
+  background: linear-gradient(160deg, #fffefb, #eeeee6);
+  border-color: rgba(182, 154, 103, .82);
+  box-shadow: inset 0 0 0 7px rgba(255, 255, 255, .72), 0 0 0 8px rgba(182, 154, 103, .18), 0 28px 60px rgba(10, 23, 18, .28);
+}
+.count div { border: 1px solid rgba(182, 154, 103, .35); }
+.card-form, .ticket {
+  border-color: rgba(182, 154, 103, .6);
+  box-shadow: 0 24px 54px rgba(12, 24, 19, .23);
+}
+.bank-card { background: linear-gradient(135deg, #3c5449, #293d35); }
+.g-item { box-shadow: 0 12px 30px rgba(46, 60, 49, .17); }
+
+/* Ilustrasi dedaunan bernuansa hijau zaitun dan cahaya alami */
+.bot { filter: saturate(.86) sepia(.08); }
+.sec .bot { opacity: .9; }
+.hero .bot { filter: saturate(.9) sepia(.06); }
+
+@media (max-width: 520px) {
+  .sec { padding-left: 19px; padding-right: 19px; }
+  .hero-arch { background: linear-gradient(155deg, rgba(255, 253, 247, .88), rgba(247, 245, 237, .66)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-bg > .scene-in { filter: none; }
+}
